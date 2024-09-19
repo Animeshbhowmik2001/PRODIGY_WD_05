@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <!-- Search bar for custom location -->
+        <div class="search-bar">
+            <input type="text" id="searchLocation" placeholder="Enter location">
+            <button id="searchWeather">Search</button>
+        </div>
+
+        <!-- Display for searched/current location weather -->
+        <div class="weather-info">
+            <h2>Weather Information</h2>
+            <p id="location"></p>
+            <p id="temperature"></p>
+            <p id="condition"></p>
+        </div>
+
+        <!-- Button for updating current location -->
+        <button id="getCurrentLocationWeather">Use Current Location</button><br/>
+
+        <!-- Default weather updates for major cities -->
+        <h2>Weather in Major Cities</h2>
+        <table id="city-weather-table">
+            <tr>
+                <th>City</th>
+                <th>Temperature</th>
+                <th>Condition</th>
+            </tr>
+            <tr id="kolkata">
+                <td>Kolkata</td>
+                <td id="kolkata-temp"></td>
+                <td id="kolkata-condition"></td>
+            </tr>
+            <tr id="delhi">
+                <td>Delhi</td>
+                <td id="delhi-temp"></td>
+                <td id="delhi-condition"></td>
+            </tr>
+            <tr id="mumbai">
+                <td>Mumbai</td>
+                <td id="mumbai-temp"></td>
+                <td id="mumbai-condition"></td>
+            </tr>
+            <tr id="bengaluru">
+                <td>Bengaluru</td>
+                <td id="bengaluru-temp"></td>
+                <td id="bengaluru-condition"></td>
+            </tr>
+        </table>
+
+        <!-- 7-Day Forecast Section -->
+        <h2>3-Day's Forecast</h2>
+        <div id="forecast"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

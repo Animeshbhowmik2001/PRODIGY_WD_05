@@ -1,0 +1,154 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 30px; 
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px; 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #02d1b5;
+    font-size: 2.5em;
+    margin-bottom: 15px; 
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #0288d1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h2 {
+    font-size: 1.8em; 
+    margin-top: 20px; 
+}
+
+/* search bar */
+.search-bar {
+    margin: 10px 0;
+}
+
+.search-bar input {
+    padding: 8px; 
+    width: 30%; 
+    border: 2px solid #0288d1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #01579b;
+}
+
+
+/* fetch current location */
+button {
+    background-color: #371e41;
+    color: white;
+    border: none;
+    padding: 8px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #584062;
+}
+
+/* Table for city weather */
+#city-weather-table {
+    width: 100%;
+    margin-top: 20px; 
+    border-collapse: collapse;
+}
+
+#city-weather-table th, #city-weather-table td {
+    padding: 10px; 
+    border: 1px solid #ddd;
+}
+
+#city-weather-table th {
+    background-color: #0288d1;
+    color: white;
+    font-size: 18px;
+}
+
+#city-weather-table td {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+#city-weather-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#city-weather-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#city-weather-table tr:hover {
+    background-color: #b3e5fc;
+    transition: background-color 0.3s;
+}
+
+/* Weather info display */
+.weather-info p {
+    font-size: 18px;
+    color: #004d40;
+    margin: 8px 0;
+}
+
+#forecast {
+    margin-top: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forecast-day {
+    background-color: #0288d1;
+    color: white;
+    margin: 8px; 
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #01579b;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+    font-size: 14px;
+}
